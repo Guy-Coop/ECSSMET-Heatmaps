@@ -1,10 +1,11 @@
-import seaborn as sns
+import os
+from pathlib import Path
+
+import imageio
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
-from pathlib import Path
 import numpy as np
-import os
-import imageio
+import seaborn as sns
 
 
 def _save_heatmap(slice, fname, title, **kwargs):

@@ -1,10 +1,12 @@
-from file_loading import get_data_as_array
 import logging
+
+import numpy as np
+
 import config as cfg
 from data_processing import repair, db_scale
-from octave_bands import apply_one_third_bands
-import numpy as np
+from file_loading import get_data_as_array
 from image_generation import save_heatmaps, generate_gif
+from octave_bands import apply_one_third_bands
 
 logging.basicConfig(level=cfg.LOG_LEVEL)
 _logger = logging.getLogger(__name__)

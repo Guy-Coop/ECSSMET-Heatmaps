@@ -1,5 +1,6 @@
-import numpy as np
 from typing import List, Tuple
+
+import numpy as np
 
 
 def _get_third_octave_band_inds(frequencies):
